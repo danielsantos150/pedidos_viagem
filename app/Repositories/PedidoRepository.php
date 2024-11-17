@@ -63,13 +63,15 @@ class PedidoRepository
      *
      * @throws PedidoNaoEncontradoException Se o pedido não for encontrado.
      */
-    public function findById(int $id): Pedido
+    public function findById($id)
     {
-        try {
-            return Pedido::findOrFail($id);
-        } catch (Exception $e) {
-            throw new PedidoNaoEncontradoException('Erro ao buscar o pedido.');
+        $pedido = Pedido::find($id);
+        
+        if (!$pedido) {
+            throw new PedidoNaoEncontradoException("Pedido não encontrado.");
         }
+        
+        return $pedido;
     }
 
     /**
