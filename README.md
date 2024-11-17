@@ -274,3 +274,6 @@ volumes:
 
 ```
 
+## Para facilitar, segue o arquivo do postman para auxiliar nos testes das rotas:
+
+[Onfly.postman_collection.json](https://github.com/user-attachments/files/17791981/Onfly.postman_collection.json)
