@@ -29,8 +29,8 @@ Esta é uma aplicação de API construída com **Laravel** e **JWT Authenticatio
 ### Passo 1: Clonar o repositório
 
 ```bash
-git clone https://seu-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/danielsantos150/pedidos_viagem.git
+cd pedidos_viagem
 ```
 
 ### Passo 2: Subir os contêineres com Docker Compose
